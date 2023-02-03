@@ -1,10 +1,9 @@
 export default function Head() {
   return (
     <>
-      <title>Agrosuper</title>
+      <title>Sitio en construcción</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
-      <meta name="description" content="Home" />
-      <link rel="icon" href="/temp-favicon.png" />
+      <link rel="icon" href="/favicon.ico" />
     </>
   )
 }

@@ -1,0 +1,26 @@
+.topNav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.topNav * {
+    margin-right: 40px;
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 10px 15px;
+    align-content: center;
+}
+.topNav p {
+    border-color: var(--secondary);
+    background-color: var(--secondary);
+    color: white;
+}
+.topNav a {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+.topNav a:hover {
+    background-color: var(--primary);
+    color: white;
+}
