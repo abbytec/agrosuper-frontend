@@ -2,9 +2,10 @@
     display: flex;
     width: 100%;
     align-items: center;
+    margin: 5px;
 }
 .topNav * {
-    margin-right: 40px;
+    margin: 5px 15px 5px 20px;
     font-weight: bold;
     border: 2px solid;
     border-radius: 5px;

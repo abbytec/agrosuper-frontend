@@ -1,0 +1,34 @@
+.main{
+    position:fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow:auto;
+    background: var(--t-dark);
+}
+.loginPane{
+    height:300px;
+    width: 400px;
+    margin: 3rem auto;
+    justify-content: space-evenly;
+}
+.loginPane span{
+    display:flex;
+    width: 250px;
+    justify-content: space-between;
+    align-items: center;
+}
+.loginPane h1{
+    margin:10px auto;
+}
+.loginPane span button{
+    margin: auto;
+    padding: 10px;
+    background-color: var(--primary);
+    border-radius: 5px;
+    width: 90px;
+}
+.loginPane span input{
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    height: 25px;
+}

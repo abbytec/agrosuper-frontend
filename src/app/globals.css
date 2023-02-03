@@ -6,6 +6,9 @@
   --s-dark: #000c59;
   --s-light: #4a59b8;
 
+  --tertiary: #212121;
+  --t-light: #414141;
+  --t-dark: #000000;
   --white: #ffffff;
 }
 
@@ -29,7 +32,7 @@ header{
   box-sizing: border-box;
   float: left;
   width: 200px;
-  min-height: calc(100vh - 150px);
+  height: calc(100vh - 95px);
   position: fixed;
   bottom: 0;
   padding: 15px;
@@ -45,7 +48,7 @@ header{
   width: 100%;
 }
 .nav-links a{
-  margin: 30px auto;
+  margin: 1em auto;
   width: 65%;
 
   text-align: center;
@@ -59,7 +62,7 @@ header{
 }
 
 .nav-links a button:hover{
-  background-color: lightsalmon;
+  background-color: var(--p-light);
 }
 
 main{
@@ -68,12 +71,17 @@ main{
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  overflow: auto;
   box-sizing: border-box;
+  box-shadow:
+	  var(--s-dark) -2px -2px 2px, 
+    var(--secondary) -3px -3px 3px, 
+    var(--s-light) -4px -4px 4px;
   top: 94px;
   left: 200px;
   padding: 10px;
-  min-height: calc(100% - 94px);
-  min-width: calc(100% - 200px);
+  height: calc(100% - 94px);
+  width: calc(100% - 200px);
 }
 
 header{
@@ -86,3 +94,14 @@ header h1 {
   text-align: center;
 }
 
+
+.pane{
+  background: var(--tertiary);
+  color: white;
+  border: 2px solid var(--t-light);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

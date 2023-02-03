@@ -24,7 +24,7 @@ export default function Layout({
         <header>
           <Link href={'/general'}><Image src='/logo.png' alt='logo' width={'200'} height={'90'} style={{ objectFit: 'cover', transform: 'scale(0.8)' }} priority /></Link>
           <h1>{layout == "/general" ? "General Carnes" : layout == "/general/variaciones" ? "General Carnes Variaciones" : "Editor Semanal"}</h1>
-          <Image src={"/profile.png"} alt={'Imagen de perfil'} width={'60'} height={'60'}></Image>
+          <Image src={"/profile.png"} alt={'Imagen de perfil'} width={'50'} height={'50'}></Image>
         </header>
         <nav id='aside-nav'>
           <div className='nav-links'>

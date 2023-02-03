@@ -6,7 +6,6 @@ export default function Custom404() {
         background: "black",
         color: "white",
         display: "flex",
-        boxSizing: "border-box",
         margin: 0,
         width: "100vw",
         height: "100vh",
