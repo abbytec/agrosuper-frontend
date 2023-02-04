@@ -7,21 +7,21 @@ export default function Home() {
   return (
 
     <div className={styles.main}>
-      <div className={"pane "+styles.loginPane}>
-      <span>
-        <h1>Agrosuper - Login</h1>
+      <div className={"pane " + styles.loginPane}>
+        <span>
+          <h1>Agrosuper - Login</h1>
         </span>
         <span>
-        <p>Usuario:</p> <input type="text"></input>
+          <p>Usuario:</p> <input type="text"></input>
         </span>
         <span>
-        <p>Clave:</p> <input type="password"></input>
+          <p>Clave:</p> <input type="password"></input>
         </span>
         <span>
           <button>Ingresar</button>
         </span>
-        </div>
-      
+      </div>
+
     </div>
 
   )

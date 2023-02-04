@@ -4,11 +4,13 @@
     width: 100vw;
     overflow:auto;
     background: var(--t-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .loginPane{
     height:300px;
     width: 400px;
-    margin: 3rem auto;
     justify-content: space-evenly;
 }
 .loginPane span{

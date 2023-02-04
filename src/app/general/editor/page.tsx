@@ -1,9 +1,7 @@
-import { NextPage } from 'next'
-
 interface Props { }
 
-const Page: NextPage<Props> = ({ }) => {
-    return <></>
+const Page = ({ }: Props) => {
+    return <>editor</>
 }
 
 export default Page

@@ -9,20 +9,8 @@ const nextConfig = {
       },
     ]
   },
-  reactStrictMode: false,
   experimental: {
     appDir: true,
-    fontLoaders: [
-      {
-        loader: '@next/font/local', src: [
-          {
-            path: './src/pages/fonts/Gotham-Black.woff2',
-            weight: '400',
-            style: 'normal',
-          }
-        ], options: {}
-      }
-    ]
   },
 }
 

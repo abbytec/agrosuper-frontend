@@ -1,3 +1,8 @@
 body{
-    background-color: wheat;
+    background-color: var(--t-dark);
+}
+.itemsPane {
+    justify-content: space-evenly;
+    height: 350px;
+    width: 450px;
 }
