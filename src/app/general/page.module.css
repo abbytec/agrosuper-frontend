@@ -1,4 +1,6 @@
 .asideFilter{
-    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     left: 0;
 }
