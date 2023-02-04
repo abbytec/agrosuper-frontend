@@ -30,13 +30,19 @@ const Page = ({ }: Props) => {
     }, [])
     return <>
         <h2> Maestria 7 (main)  </h2>
-        <aside className={styles.asideFilter}>
-            <input type="date"></input>
-            <input type="date"></input>
-            <input type="checkbox"></input>
-            <input type="checkbox"></input>
-        </aside>
-        <button onClick={() => setDatos(getDatos())}>Tim button</button>
+        <div style={{ width: "100%" }} className={styles.mainDiv}>
+            <aside className={styles.asideFilter}>
+                <input type="date"></input>
+                <input type="date"></input>
+                <input type="checkbox"></input>
+                <input type="checkbox"></input>
+            </aside>
+            <span className={styles.mainSpan}>
+                <button onClick={() => setDatos(getDatos())}>Tim button</button>
+            </span>
+        </div>
+
+
     </>
 }
 export default Page
