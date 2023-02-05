@@ -21,7 +21,7 @@ export default async function handler(
   let finalResponse: any = {};
   const url = "http://f11.cl:8090/";
   if (req.body.method == "getCarnesRealProyeccion") {
-    finalRequest["query"] = "a";
+    finalRequest["query"] = req.body.query;
     finalResponse = await fetch(url + req.body.method, {
       method: 'POST',
       headers: myHeaders,

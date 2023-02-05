@@ -6,7 +6,17 @@ interface Props { };
 const myHeaders = new Headers();
 myHeaders.append('Content-Type', 'application/json');
 var request = {
-    method: "editorSemanal"
+    method: "getCarnesRealProyeccion",
+    query:{
+        initial_date: {
+            month: 1,
+            year: 2023
+        },
+        end_date:{
+            month: 1,
+            year: 20255
+        }
+    }
 }
 const Page = ({ }: Props) => {
     const [datos, setDatos] = useState({})
@@ -15,13 +25,13 @@ const Page = ({ }: Props) => {
 
     async function getDatos() {
 
-        const res = await fetch("http://localhost:3000/api/SecureApi", {
+        const res = await fetch("/api/SecureApi", {
             method: "POST",
             body: JSON.stringify(request),
             headers: myHeaders
         });
-        const object = await res.json().then((data) => data)
-        console.log("AAAAA")
+        const object = await res.json().then((data) => data);
+        console.log(object)
         return object;
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -32,9 +42,17 @@ const Page = ({ }: Props) => {
         <div style={{ width: "100%" }} className={styles.mainDiv}>
             <aside className={styles.asideFilter}>
                 <p>Fecha de inicio:</p>
-                <input type="date"></input>
+                <input type="month" onChange={(e)=>{
+                    request.query.initial_date.month = e.currentTarget.valueAsDate?.getMonth() as number;
+                    request.query.initial_date.year = e.currentTarget.valueAsDate?.getFullYear() as number;
+                    setDatos(getDatos());
+                    }}></input>
                 <p>Fecha de fin:</p>
-                <input type="date"></input>
+                <input type="month" onChange={(e)=>{
+                    request.query.end_date.month = e.currentTarget.valueAsDate?.getMonth() as number;
+                    request.query.end_date.year = e.currentTarget.valueAsDate?.getFullYear() as number;
+                    setDatos(getDatos());
+                    }}></input>
                 <span>
                     <label>USDM</label>
                     <input type="checkbox"></input>

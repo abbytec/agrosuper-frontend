@@ -16,8 +16,8 @@
         var(--p-light) 4px 4px 4px;
     overflow: hidden;
 }
-.asideFilter input[type="date"] {
-    width: 150px;
+.asideFilter input[type="month"] {
+    width: 140px;
 }
 .asideFilter span {
     display: flex;
