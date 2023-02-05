@@ -26,16 +26,24 @@ const Page = ({ }: Props) => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
-        setDatos(getDatos())
+        //setDatos(getDatos())
     }, [])
     return <>
-        <h2> Maestria 7 (main)  </h2>
         <div style={{ width: "100%" }} className={styles.mainDiv}>
             <aside className={styles.asideFilter}>
+                <p>Fecha de inicio:</p>
                 <input type="date"></input>
+                <p>Fecha de fin:</p>
                 <input type="date"></input>
-                <input type="checkbox"></input>
-                <input type="checkbox"></input>
+                <span>
+                    <label>USDM</label>
+                    <input type="checkbox"></input>
+                </span>
+                <span>
+                    <label>USD Ton</label>
+                    <input type="checkbox"></input>
+                </span>
+                
             </aside>
             <span className={styles.mainSpan}>
                 <button onClick={() => setDatos(getDatos())}>Tim button</button>

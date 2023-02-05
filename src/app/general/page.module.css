@@ -3,13 +3,30 @@
     flex-direction: row;
 }
 .asideFilter{
+    width:216px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto 0 0
+    margin: 0 20px 0 0;
+    padding-bottom: 16px;
+    padding-left: 10px;
+    box-shadow: 
+        var(--p-dark) 2px 2px 2px, 
+        var(--primary) 3px 3px 3px, 
+        var(--p-light) 4px 4px 4px;
+    overflow: hidden;
 }
-.asideFilter input {
+.asideFilter input[type="date"] {
     width: 150px;
+}
+.asideFilter span {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: 16px 20px 0 auto;
+}
+.asideFilter p {
+    margin-bottom: 8px;
 }
 .mainSpan {
     width: 100%;
